@@ -103,6 +103,7 @@ export type BuiltinAgentName =
   | "metis"
   | "momus"
   | "atlas"
+  | "system-collector"
 
 export type OverridableAgentName =
   | "build"

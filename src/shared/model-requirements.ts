@@ -89,6 +89,13 @@ export const AGENT_MODEL_REQUIREMENTS: Record<string, ModelRequirement> = {
       { providers: ["openai", "github-copilot", "opencode"], model: "gpt-5.2" },
     ],
   },
+  "system-collector": {
+    fallbackChain: [
+      { providers: ["opencode"], model: "minimax-m2.5-free" },
+      { providers: ["anthropic", "opencode"], model: "claude-haiku-4-5" },
+      { providers: ["opencode"], model: "gpt-5-nano" },
+    ],
+  },
 }
 
 export const CATEGORY_MODEL_REQUIREMENTS: Record<string, ModelRequirement> = {
